@@ -36,11 +36,11 @@ export default function CallToAction() {
     return (
         <div ref={textRef} className={`relative flex flex-col gap-6 lg:gap-10 text-3xl lg:text-5xl items-center text-center py-10 lg:py-36`}>
             <div className={`duration-500 transition-all ${isVisible ? "opacity-100" : "opacity-0"}`}>
-                Let's breath digital life into your ideas
+                Let&apos;s breath digital life into your ideas
             </div>
 
             <div className={`duration-[2500ms] transition-all  ${isVisible ? "opacity-100 text-theme" : "opacity-0"}`}>
-                Let's work together
+                Let&apos;s work together
             </div>
         </div>
     )
