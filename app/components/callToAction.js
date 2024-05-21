@@ -1,5 +1,5 @@
 'use client'
- 
+
 import { useRef, useState, useEffect } from "react"
 
 export default function CallToAction() {
@@ -15,10 +15,10 @@ export default function CallToAction() {
             }
         };
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         }
     }, [isVisible]);
 
@@ -35,11 +35,11 @@ export default function CallToAction() {
 
     return (
         <div ref={textRef} className={`relative flex flex-col gap-6 lg:gap-10 text-3xl lg:text-5xl items-center text-center py-10 lg:py-36`}>
-            <div className={`duration-500 transition-all ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+            <div className={`duration-500 transition-all ${isVisible ? "opacity-100" : "opacity-0"}`}>
                 Let's breath digital life into your ideas
             </div>
 
-            <div className={`duration-[2500ms] transition-all  ${isVisible ? 'opacity-100 text-theme' : 'opacity-0'}`}>
+            <div className={`duration-[2500ms] transition-all  ${isVisible ? "opacity-100 text-theme" : "opacity-0"}`}>
                 Let's work together
             </div>
         </div>
